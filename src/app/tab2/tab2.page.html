@@ -1,0 +1,36 @@
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+
+  <ion-card dir="rtl" *ngFor="let skillss of myObject ">
+
+    
+    <ion-card-content>
+    
+   <p >الاسم:  {{ skillss[1]['name']}}</p> 
+     
+     <p >المهارة:  {{skillss[1]['skill']}}</p> 
+    
+  
+     رابط الاعمال:  <a href="{{skillss[1]['link']}}">{{skillss[1]['link']}}</a>
+<br>
+     رقم الهاتف:  {{skillss[1]['phon']}}
+<br>
+ البريد الالكتروني:  {{skillss[1]['email']}}
+<br>
+     ملاحظات:  {{skillss[1]['nots']}}
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-content>

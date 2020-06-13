@@ -1,0 +1,79 @@
+
+
+<ion-header>
+    <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-content dir="rtl">
+
+
+
+  
+    <ion-card dir="rtl" *ngFor="let item of itemArray">
+
+    
+                <div *ngIf="item.uid === myUid" >
+                    <ion-card-content>
+    
+                        <p >الاسم:  {{item.name}}</p> 
+                          
+                          <p >المهارة:  {{item.skill}}</p> 
+                         
+                       
+                          رابط الاعمال:  <a href="{{item.link}}">{{item.link}}</a>
+                     <br>
+                          رقم الهاتف:  {{item.phon}}
+                     <br>
+                      البريد الالكتروني: {{item.email}}
+                     <br>
+                          ملاحظات:  {{item.nots}}
+                         </ion-card-content>
+              <p>  </p>
+                <td> <button class="bbutton" type="button" uk-toggle="target: #modal-example" (click)="editForm(item.$key)">تعديل</button></td>
+                <td> <button class="bbutton" (click)="onDelete(item.$key)" >حذف</button></td>
+
+
+                <!-- This is the modal -->
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+ 
+        <fieldset class="uk-fieldset">
+ 
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="اسمك" name="name"   [(ngModel)]="data.name">
+            </div>
+           
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="المهارة" name="skill"  [(ngModel)]="data.skill">
+            </div>
+          
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="رابط اعمالي" name="link"  [(ngModel)]="data.link" >
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input" type="text" placeholder="رقم الهاتف" name="phon"  [(ngModel)]="data.phon">
+          </div>
+         
+            <div class="uk-margin">
+                <textarea class="uk-textarea" rows="5" placeholder="ملاحظات" name="nots"  [(ngModel)]="data.nots"></textarea>
+            </div>
+     
+        </fieldset>
+ 
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">الغاء</button>
+            <button class="uk-button uk-button-primary" type="button" (click)="onEdit(item.$key)" >حفظ</button>
+        </p>
+    </div>
+</div>
+
+</div>
+</ion-card>
+    
+</ion-content>

@@ -1,0 +1,74 @@
+
+<ion-content padding >
+  <br>
+  <br>
+  <br>
+  <ion-card>
+    <ion-card-content dir="rtl">
+  
+   <div padding>
+  
+      <h1 style="color: #CCAE64; padding: 5px; font-family: cairo; margin-bottom: 12px; font-size: 20pt;"> انشاء حساب </h1>
+  
+    
+    
+  
+  <br>
+
+     
+  <ion-item class="transparentWhite">
+    <ion-icon item-right md="md-at" ios="ios-at"  style=" color:#0077C2"></ion-icon>
+  <ion-input style="font-family: Courier New;" [(ngModel)]='data.name' placeholder="الاسم "></ion-input>
+  </ion-item>
+
+
+
+
+<br>
+<ion-item class="transparentWhite">
+  <ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
+<ion-input style="font-family: Courier New;" [(ngModel)]='data.skill'  placeholder="المهارة " ></ion-input>
+</ion-item>
+
+<br>
+  <ion-item class="transparentWhite">
+    <ion-icon item-right md="md-at" ios="ios-at"  style=" color:#0077C2"></ion-icon>
+  <ion-input style="font-family: Courier New;" [(ngModel)]='data.email' placeholder="البريد الالكتروني"></ion-input>
+  </ion-item>
+
+  <br>
+
+
+    <ion-item class="transparentWhite">
+    <ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
+  <ion-input style="font-family: Courier New;" [(ngModel)]='data.phon'  placeholder="رقم الهاتف " ></ion-input>
+  </ion-item>
+
+
+
+<br>
+<ion-item class="transparentWhite">
+<ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
+<ion-input style="font-family: Courier New;" [(ngModel)]='data.password'  placeholder="كلمة المرور  " type="password"></ion-input>
+</ion-item>
+
+
+
+<br>
+
+<br><br>
+
+  
+  
+      <button ion-button block class="button button3"(click)="register()" > انشاء حساب</button>
+  &nbsp; &nbsp;
+    <button ion-button block class="button button3"(click)="goToLogin()">تسجيل دخول</button>
+      <!--<a (click)="forgetPassword()" style="font-weight: bold; font-size: 12pt; width: 100%; text-align: center;color: #6e6e6e;">chick password�</a>
+  -->
+    </div>
+  
+    </ion-card-content>
+  </ion-card>
+  
+  </ion-content>
+  
