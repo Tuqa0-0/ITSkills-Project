@@ -1,24 +1,33 @@
 
+ion-content{
+  --background: #2980B9 url('../../assets/image/add skills.png') no-repeat center center / cover ;
+  }  
+
+
 .button {
-    background-color: #CCAE64;
-    border: none;
-    color: white;
-    padding: 16px 46px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 6px 4px;
-    cursor: pointer;
-    border-radius: 8px;
-font-family: cairo;
+  background-color: #2980B9;
+  border: none;
+  color: white;
+  padding: 16px 46px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: cairo;
+  margin: 15px 100px;
+  border-radius: 30px;
   }
   
-  
-  
-  
-  
+  ion-input{
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    color: #2980B9;
+      text-decoration: none;
+    }
+
   ion-card{
-  --background: #fff
-  
+  --background: #fff ;
+  border: none;
+
   }

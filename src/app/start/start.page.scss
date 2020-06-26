@@ -1,5 +1,5 @@
 ion-content{
-  --background: #fff url('../../assets/image/start.png') no-repeat center center / cover;
+  --background: #fff url('../../assets/image/s.png') no-repeat center center / cover;
   }
 
 
@@ -9,15 +9,16 @@ div {
    }
    
    .button {
-    background-color: #CCAE64;
+    background-color: #2980B9;
     border: none;
     color: white;
-    padding: 16px 46px;
+    padding: 16px 26px;
     text-align: center;
     text-decoration: none;
     display: block;
     font-size: 20px;
-    margin: 6px 4px;
-    border-radius: 8px;
+    font-family: cairo;
+    margin: 15px 18px;
+    border-radius: 30px;
   }
   

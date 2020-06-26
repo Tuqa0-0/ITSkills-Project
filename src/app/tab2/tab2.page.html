@@ -4,26 +4,26 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col  size="12">
 
 
-  <ion-card dir="rtl" *ngFor="let skillss of myObject ">
+  <ion-card dir="ltr" *ngFor="let skillss of myObject ">
 
     
     <ion-card-content>
     
-   <p >الاسم:  {{ skillss[1]['name']}}</p> 
+   <p >Name:  {{ skillss[1]['name']}}</p> 
      
-     <p >المهارة:  {{skillss[1]['skill']}}</p> 
+     <p >Skill:  {{skillss[1]['skill']}}</p> 
     
   
-     رابط الاعمال:  <a href="{{skillss[1]['link']}}">{{skillss[1]['link']}}</a>
+     Business link:  <a href="{{skillss[1]['link']}}">{{skillss[1]['link']}}</a>
 <br>
-     رقم الهاتف:  {{skillss[1]['phon']}}
+Telephone number:  {{skillss[1]['phon']}}
 <br>
- البريد الالكتروني:  {{skillss[1]['email']}}
+  Email:  <a href="mailto: {{skillss[1]['email']}}">{{skillss[1]['email']}}</a>
 <br>
-     ملاحظات:  {{skillss[1]['nots']}}
+Notes:  {{skillss[1]['nots']}}
     </ion-card-content>
   </ion-card>
 
@@ -32,5 +32,8 @@
 </ion-col>
 </ion-row>
 </ion-grid>
+
+
+
 
 </ion-content>

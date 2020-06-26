@@ -3,41 +3,41 @@
  
 
     <ion-card>
-        <ion-card-content dir="rtl"> 
+        <ion-card-content dir="ltr"> 
        <div padding >
-          <h1 style="color: #CCAE64; padding: 5px; font-family: cairo; font-weight: bold; margin-bottom: 12px; font-size: 20pt; text-align: center;">اضافة مهارة</h1>
+          <h1 style="color: #2980B9; padding: 5px; font-family: cairo; font-weight: bold; margin-bottom: 12px; font-size: 20pt; text-align: center;">Add a skill</h1>
       
           
       <br><br>
           <ion-item class="transparentWhite">
-          <ion-input style="font-family: Courier New;"  [(ngModel)]='data.name' placeholder=" الاسم  " type='text'></ion-input>
+          <ion-input style="font-family: Courier New;"  [(ngModel)]='data.name' placeholder="Name" type='text'></ion-input>
           </ion-item>
       
           
           <br>
           <ion-item class="transparentWhite">
-            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.skill' placeholder=" المهارة  " type='text'></ion-input>
+            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.skill' placeholder="Skill" type='text'></ion-input>
           </ion-item>
       
           <br>
           <ion-item class="transparentWhite">
-            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.link' placeholder=" رابط اعمالك  " type='text'></ion-input>
+            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.link' placeholder="Business link" type='text'></ion-input>
           </ion-item>
       
           
           <br>
           <ion-item class="transparentWhite">
-            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.phon' placeholder=" رقم الهاتف  " type='text'></ion-input>
+            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.phon' placeholder="Telephone number" type='text'></ion-input>
           </ion-item>
       
           <br>
           <ion-item class="transparentWhite">
-            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.email' placeholder=" البريد الالكتروني   " type='text'></ion-input>
+            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.email' placeholder="Email" type='text'></ion-input>
           </ion-item>
       
           <br>
           <ion-item class="transparentWhite">
-            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.nots' placeholder=" ملاحظات  " type='text'></ion-input>
+            <ion-input style="font-family: Courier New;"  [(ngModel)]='data.nots' placeholder="Notes" type='text'></ion-input>
           </ion-item>
       
           
@@ -45,7 +45,7 @@
       
     
       <br>
-      <button  class="button" (click)="insertSkill()" >اضافة</button>
+     <p> <button  class="button" (click)="insertSkill()" >Add</button></p>
       
       
       </div>

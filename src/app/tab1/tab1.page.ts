@@ -66,8 +66,7 @@ export class Tab1Page {
       uid : auth.uid,
     })
 
-    this.router.navigateByUrl('tabs/tab3')
-  }
+    this.router.navigate(['/myskill'])  }
 
 })
 }

@@ -3,22 +3,16 @@
   <br>
   <br>
   <br>
+  <br>
+  <br><br>
   <ion-card>
-    <ion-card-content dir="rtl">
+    <ion-card-content dir="ltr">
   
    <div padding>
-  
-      <h1 style="color: #CCAE64; padding: 5px; font-family: cairo; margin-bottom: 12px; font-size: 20pt;"> انشاء حساب </h1>
-  
-    
-    
-  
-  <br>
-
-     
+   
   <ion-item class="transparentWhite">
     <ion-icon item-right md="md-at" ios="ios-at"  style=" color:#0077C2"></ion-icon>
-  <ion-input style="font-family: Courier New;" [(ngModel)]='data.name' placeholder="الاسم "></ion-input>
+  <ion-input style="font-family: Courier New;" [(ngModel)]='data.name' placeholder="Name"></ion-input>
   </ion-item>
 
 
@@ -27,13 +21,13 @@
 <br>
 <ion-item class="transparentWhite">
   <ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
-<ion-input style="font-family: Courier New;" [(ngModel)]='data.skill'  placeholder="المهارة " ></ion-input>
+<ion-input style="font-family: Courier New;" [(ngModel)]='data.skill'  placeholder="Skill" ></ion-input>
 </ion-item>
 
 <br>
   <ion-item class="transparentWhite">
     <ion-icon item-right md="md-at" ios="ios-at"  style=" color:#0077C2"></ion-icon>
-  <ion-input style="font-family: Courier New;" [(ngModel)]='data.email' placeholder="البريد الالكتروني"></ion-input>
+  <ion-input style="font-family: Courier New;" [(ngModel)]='data.email' placeholder="Email"></ion-input>
   </ion-item>
 
   <br>
@@ -41,7 +35,7 @@
 
     <ion-item class="transparentWhite">
     <ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
-  <ion-input style="font-family: Courier New;" [(ngModel)]='data.phon'  placeholder="رقم الهاتف " ></ion-input>
+  <ion-input style="font-family: Courier New;" [(ngModel)]='data.phon'  placeholder="Telephone number" ></ion-input>
   </ion-item>
 
 
@@ -49,7 +43,7 @@
 <br>
 <ion-item class="transparentWhite">
 <ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
-<ion-input style="font-family: Courier New;" [(ngModel)]='data.password'  placeholder="كلمة المرور  " type="password"></ion-input>
+<ion-input style="font-family: Courier New;" [(ngModel)]='data.password'  placeholder="Password" type="password"></ion-input>
 </ion-item>
 
 
@@ -60,9 +54,9 @@
 
   
   
-      <button ion-button block class="button button3"(click)="register()" > انشاء حساب</button>
+      <button ion-button block class="button button3"(click)="register()" > Create an account </button>
   &nbsp; &nbsp;
-    <button ion-button block class="button button3"(click)="goToLogin()">تسجيل دخول</button>
+    <button ion-button block class="button button3"(click)="goToLogin()">sign in</button>
       <!--<a (click)="forgetPassword()" style="font-weight: bold; font-size: 12pt; width: 100%; text-align: center;color: #6e6e6e;">chick password�</a>
   -->
     </div>

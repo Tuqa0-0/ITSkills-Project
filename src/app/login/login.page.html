@@ -1,48 +1,30 @@
 
 <ion-content padding>
   <br>
-  <br>
-  <br>
-  <ion-card>
-    <ion-card-content dir="rtl">
-  
+ 
+
    <div >
-  
-     <!-- <h1 style="color: #CCAE64; padding: 5px; font-weight: bold; margin-bottom: 12px; font-size: 20pt;">   تسجيل دخول </h1>
-  
--->
-
-
    
-      <ion-item class="transparentWhite">
-        <ion-icon item-right md="md-at" ios="ios-at"  style=" color:#0077C2 "></ion-icon>
-      <ion-input style="font-family: Courier New;" [(ngModel)]='data.email' placeholder="البريد الالكتروني"></ion-input>
-      </ion-item>
-  
+    
+      <ion-input  style="font-family: Courier New;" [(ngModel)]='data.email' placeholder="Email"></ion-input>
+     
+  <br>
     <br>
-        <ion-item class="transparentWhite">
-        <ion-icon item-right md="md-lock" ios="ios-lock" style=" color:#0077C2"></ion-icon>
-      <ion-input style="font-family: Courier New;" [(ngModel)]='data.password'  placeholder="كلمة المرور" type="password"></ion-input>
-      </ion-item>
+        
+      <ion-input style="font-family: Courier New;" [(ngModel)]='data.password'  placeholder="password" type="password"></ion-input>
+     
     
   
     
   <br><br>
   
-
-
-
-
-
   
-      <button ion-button block class="button button3"(click)="login()" > تسجيل دخول </button>
+      <button ion-button block class="button"(click)="login()" >Sign in</button>
     &nbsp; &nbsp;
-    <button ion-button block class="button button3"(click)="goToRegister()">انشاء حساب </button>
+    <button ion-button block class="button"(click)="goToRegister()">Create an account</button>
   
     </div>
   
-    </ion-card-content>
-  </ion-card> 
   
   
   

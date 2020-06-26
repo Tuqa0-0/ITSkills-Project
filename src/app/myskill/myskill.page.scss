@@ -1,25 +1,31 @@
-
 ion-content{
   --background: #fff url('../../assets/image/myskill.png') no-repeat center center / cover;
   }
 
 
-.bbutton {
-    background-color: #CCAE64;
+
+  .bbutton {
+    
+    background-color: #2980B9;
     border: none;
     color: white;
-    padding: 16px 46px;
+    padding: 10px 36px;
     text-align: center;
     text-decoration: none;
-    display: block;
-    font-size: 20px;
-    margin: 6px 4px;
-    border-radius: 8px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: cairo;
+    margin: 12px 12px;
+    border-radius: 30px;
   }
 
   ion-card{
   
     --background: #fff ;
     font-family: cairo;
+    border-radius: 20px;
+    border: none;
   
     }
+
+   

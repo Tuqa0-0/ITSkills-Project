@@ -1,28 +1,36 @@
 ion-content{
-  --background: #fff url('../../assets/image/login.jpg') no-repeat center center / cover;
+  --background: #fff url('../../assets/image/login.png') no-repeat center center / cover;
   }
 
  
 .button {
-    background-color: #CCAE64;
+    background-color: white;
     border: none;
-    color: white;
+    color: #2980B9;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    margin: 14px 12px;
+    border-radius: 8px;
   }
   
-  .button3 {border-radius: 8px;}
+  ion-input{
+  border-radius: 8px;
+  background-color: white;
+  border: none;
+  color: #2980B9;
+  text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
   
   
-  
-  
-  ion-card{
+  div{
   --background: #fff;
-  margin-top: 150px;
   font-family: cairo;
+  padding: 90px;
+  margin-top: 200px;
+
 }

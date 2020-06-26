@@ -42,7 +42,7 @@ export class MyskillPage implements OnInit {
 
   constructor(public db: AngularFireDatabase ,
     private router: Router,
-    afAuth:AngularFireAuth,
+    public afAuth:AngularFireAuth,
     ) {
 
 
@@ -110,11 +110,23 @@ this.itemArray =[]
 
     onDelete( $key){
       this.itemList.remove($key);
-      this.itemArray = []
-    }
+      this.itemArray = [];
+      this.router.navigateByUrl('tabs/tab1');
+        }
 
     
+    out(){
+
+      this.afAuth.auth.signOut();
+    
   
+      this.router.navigate(['/start'])
+    
+
+    console.log('تسجيل خروج') 
+
+  }
+
 
     
 
